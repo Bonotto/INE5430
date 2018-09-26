@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drunk_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drunk_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drunk_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_color -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_color">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_nationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_nationality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_owner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_owner">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#inhabited_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#inhabited_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_left_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_left_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_right_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_right_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_right_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoked_by"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoked_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoked_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beer_Drinker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beer_Drinker">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bluemaster_Smoker"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#beer"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird_Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird_Owner">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Pallmall_Smoker"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Blends_Smoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Blends_Smoker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat_Owner"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Water_Drinker"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blends"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bluemaster_Smoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bluemaster_Smoker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bluemaster"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#British -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#British">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat_Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat_Owner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Coffe_Drinker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Coffe_Drinker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#coffe"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Danish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Danish">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Tea_Drinker"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog_Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog_Owner">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Swedish"/>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dunhill_Smoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dunhill_Smoker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse_Owner"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dunhill"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish_Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish_Owner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#German -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#German">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Prince_Smoker"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse_Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse_Owner">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_pet"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#lives_by_side"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dunhill_Smoker"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Milk_Drinker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Milk_Drinker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#milk"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Norwegian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Norwegian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Pallmall_Smoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Pallmall_Smoker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#pallmall"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#has_nationality"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Prince_Smoker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Prince_Smoker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#smoke"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#prince"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Swedish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Swedish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Nationality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Tea_Drinker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Tea_Drinker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#tea"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Water_Drinker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Water_Drinker">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#drink"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#water"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#beer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#beer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bird -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bird">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Bird"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blends -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blends">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <has_color rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bluemaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bluemaster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#british_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#british_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#British"/>
+        <lives_in rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#cat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#cat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#coffe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#coffe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#danish_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#danish_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Danish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dunhill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dunhill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fifth_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fifth_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_left_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <is_on_the_right_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#forth_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#first_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#first_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#is_on_the_right_of"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdf:type>
+        <is_on_the_left_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#second_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#forth_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#forth_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <is_on_the_left_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fifth_house"/>
+        <is_on_the_right_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#third_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#german_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#german_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#German"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#inhabited_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Coffe_Drinker"/>
+            </owl:Restriction>
+        </rdf:type>
+        <has_color rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green"/>
+        <is_on_the_left_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Horse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#norwegian_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#norwegian_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Norwegian"/>
+        <lives_by_side rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue_house"/>
+        <lives_in rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#first_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#pallmall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#pallmall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#prince -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#prince">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Cigarette"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <has_color rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#second_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#second_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <is_on_the_left_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#third_house"/>
+        <is_on_the_right_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#first_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#swedish_person -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#swedish_person">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Swedish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#third_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#third_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#inhabited_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Milk_Drinker"/>
+            </owl:Restriction>
+        </rdf:type>
+        <is_on_the_left_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#forth_house"/>
+        <is_on_the_right_of rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#second_house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#water -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#water">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Beverage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <has_color rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Color"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow_house -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow_house">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#House"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#inhabited_by"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#Dunhill_Smoker"/>
+            </owl:Restriction>
+        </rdf:type>
+        <has_color rdf:resource="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#beer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#coffe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#milk"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#tea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#water"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blends"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#bluemaster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#dunhill"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#pallmall"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#prince"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#blue_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#green_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#red_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#white_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#yellow_house"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#fifth_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#first_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#forth_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#second_house"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/bonotto/ontologies/2018/8/untitled-ontology-2#third_house"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
