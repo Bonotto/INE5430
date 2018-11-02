@@ -43,7 +43,10 @@ public class RemoteDriver {
         // requisicao da posicao do caminhao
         out.println("r");
         
-        String filename = "/home/bonotto/Dropbox/Faculdade/2018-02/INE5430/fuzzytruck/remoteDriverManual/src/remoteDriver/truckBrunoJoaoSouto.fcl";
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        
+//        String filename = "truckBrunoJoaoSouto_LastTryedBeforeModifications.fcl";
+        String filename = "actual_truckBrunoJoaoSouto.fcl";
         
         FIS fis = FIS.load(filename,true);
         
