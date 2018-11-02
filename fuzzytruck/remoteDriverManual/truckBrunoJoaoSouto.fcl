@@ -23,13 +23,13 @@ END_FUZZIFY
 
 // Fuzzify input variable 'angle'
 FUZZIFY angle
-    TERM west2      := gauss 360 30;
-    TERM west       := gauss   0 30;
-    TERM southWest  := gauss  45 30;
-    TERM south      := gauss  90 30;
-    TERM southEast  := gauss 135 30;
-    TERM east       := gauss 180 30;
-    TERM north      := gauss 270 30;
+    TERM west2      := (270,0) (360,1);
+    TERM west       := TRIAN -45   0  45;
+    TERM southWest  := TRIAN   0  45  90;
+    TERM south      := TRIAN  45  90 135;
+    TERM southEast  := TRIAN  90 135 180;
+    TERM east       := TRIAN 135 180 270;
+    TERM north      := TRIAN 180 270 360;
 END_FUZZIFY
 
 // Defuzzify output variable 'output'
