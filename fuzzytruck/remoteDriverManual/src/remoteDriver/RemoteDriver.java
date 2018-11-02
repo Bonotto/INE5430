@@ -52,7 +52,7 @@ public class RemoteDriver {
         	return;
         }
         
-        JFuzzyChart.get().chart(fis);        
+//        JFuzzyChart.get().chart(fis);        
         
         while ((fromServer = in.readLine()) != null) {
         	StringTokenizer st = new StringTokenizer(fromServer);
@@ -63,7 +63,6 @@ public class RemoteDriver {
         	System.out.println("x: " + x + " y: " + y + " angle: " + angle);
         	
 			fis.setVariable("x", x);
-			fis.setVariable("y", y);
 			fis.setVariable("angle", angle);
 			
 			fis.evaluate();

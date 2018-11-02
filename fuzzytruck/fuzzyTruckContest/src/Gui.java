@@ -77,7 +77,7 @@ public class Gui extends JFrame {
 
 		xisValue.setText("0.2");
 		ypsolonValue.setText("0.2");
-		anguloValue.setText("30");
+		anguloValue.setText("10");
 		stepValue.setText("1");
 		
 		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);

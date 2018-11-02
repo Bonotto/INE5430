@@ -4,7 +4,6 @@ FUNCTION_BLOCK truckBrunoJoaoSouto
 // Define input variables
 VAR_INPUT
     x : REAL;
-    y : REAL;
     angle : REAL;
 END_VAR
 
@@ -22,13 +21,6 @@ FUZZIFY x
     TERM right := (0.7, 0) (0.8,1) (1, 1);
 END_FUZZIFY
 
-// Fuzzify input variable 'y'
-FUZZIFY y
-    TERM far := (0, 1) (0.5, 0);
-    TERM middle := (0.25, 0) (0.5,1) (0.75,0);
-    TERM close := (0.5, 0) (1,1);
-END_FUZZIFY
-
 // Fuzzify input variable 'angle'
 FUZZIFY angle
     TERM south := gauss 90 30;
@@ -43,9 +35,9 @@ END_FUZZIFY
 DEFUZZIFY output
     TERM allRight       := (-1,1) (-0.6,1) (-0.5,0);
     TERM right          := (-0.6,0) (-0.5,1) (-0.4,1) (-0.3,0);
-    TERM softRight  := (-0.4,0) (-0.3,1) (-0.2,1) (-0.1,0);
+    TERM softRight      := (-0.4,0) (-0.3,1) (-0.2,1) (-0.1,0);
     TERM keepCenter     := (-0.2,0) (-0.1,1) (0.1,1) (0.2,0);
-    TERM softLeft   := (0.1,0) (0.2,1) (0.3,1) (0.4,0);    
+    TERM softLeft       := (0.1,0) (0.2,1) (0.3,1) (0.4,0);    
     TERM left           := (0.3,0) (0.4,1) (0.5,1) (0.6,0);
     TERM allLeft        := (0.5,0) (0.6,1) (1,1);
     METHOD : COG; // Use 'Center Of Gravity' defuzzification method
@@ -71,38 +63,25 @@ RULEBLOCK No1
     RULE 6  : IF x IS middleLeft AND angle IS south THEN output IS left;
     RULE 7  : IF x IS middleLeft AND angle IS east THEN output IS right;
     RULE 8  : IF x IS middleLeft AND angle IS west THEN output IS left;
-    RULE 9  : IF x IS middleLeft AND angle IS southWest THEN output IS left;
-    RULE 10 : IF x IS middleLeft AND angle IS southEast THEN output IS right;
+    RULE 9  : IF x IS middleLeft AND angle IS southWest THEN output IS allLeft;
+    RULE 10 : IF x IS middleLeft AND angle IS southEast THEN output IS allRight;
 
     RULE 11 : IF x IS center AND angle IS north THEN output IS allRight;
     RULE 12 : IF x IS center AND angle IS north THEN output IS allLeft;
-    RULE 13 : IF x IS center AND angle IS south THEN output IS keepCenter;
-    RULE 14 : IF x IS center AND angle IS east THEN output IS softRight;
-    RULE 15 : IF x IS center AND angle IS west THEN output IS softLeft;
+    RULE 14 : IF x IS center AND angle IS east THEN output IS allRight;
+    RULE 15 : IF x IS center AND angle IS west THEN output IS allLeft;
 
     RULE 16 : IF x IS middleRight AND angle IS north THEN output IS allLeft;
     RULE 17 : IF x IS middleRight AND angle IS south THEN output IS right;
     RULE 18 : IF x IS middleRight AND angle IS east THEN output IS right;
     RULE 19 : IF x IS middleRight AND angle IS west THEN output IS left;
-    RULE 20 : IF x IS middleRight AND angle IS southWest THEN output IS left;
-    RULE 21 : IF x IS middleRight AND angle IS southEast THEN output IS right;
+    RULE 20 : IF x IS middleRight AND angle IS southWest THEN output IS allLeft;
+    RULE 21 : IF x IS middleRight AND angle IS southEast THEN output IS allRight;
 
     RULE 22 : IF x IS right AND angle IS north THEN output IS allLeft;
     RULE 23 : IF x IS right AND angle IS south THEN output IS allRight;
     RULE 24 : IF x IS right AND angle IS east THEN output IS allRight;
     RULE 25 : IF x IS right AND angle IS west THEN output IS allLeft;
-
-    // RULE 22 : IF y IS far AND x IS middleLeft AND angle IS west THEN output IS allLeft;
-    // RULE 23 : IF y IS far AND x IS middleRight AND angle IS east THEN output IS allRight;
-
-    // RULE 24 : IF y IS middle AND x IS center AND angle IS west THEN output IS allLeft;
-    // RULE 25 : IF y IS middle AND x IS center AND angle IS east THEN output IS allRight;
-
-    // RULE 26 : IF y IS close AND x IS middleLeft AND angle IS west THEN output IS allLeft;
-    // RULE 27 : IF y IS close AND x IS middleRight AND angle IS east THEN output IS allRight;
-
-    // RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allLeft;
-    // RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allRight;
 
 END_RULEBLOCK
 
