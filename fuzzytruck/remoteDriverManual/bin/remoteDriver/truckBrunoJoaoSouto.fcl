@@ -15,10 +15,10 @@ END_VAR
 
 // Fuzzify input variable 'x'
 FUZZIFY x
-    TERM left := (0, 1) (0.2,1) (0.25, 0);
-    TERM middleLeft := (0.15, 0) (0.25,1) (0.45,1) (0.55, 0);
-    TERM middleRight := (0.45, 0) (0.55,1) (0.75,1) (0.85, 0);
-    TERM right := (0.75, 0) (0.8,1) (1, 1);
+    TERM left := (0, 1) (0.2,1) (0.3, 0);
+    TERM middleLeft := (0.2, 0) (0.3,1) (0.5,1) (0.6, 0);
+    TERM middleRight := (0.4, 0) (0.5,1) (0.7,1) (0.8, 0);
+    TERM right := (0.7, 0) (0.8,1) (1, 1);
 END_FUZZIFY
 
 // Fuzzify input variable 'y'
@@ -64,12 +64,6 @@ RULEBLOCK No1
     RULE 2 : IF x IS middleLeft AND angle IS south THEN output IS allleft;
     RULE 3 : IF x IS middleLeft AND angle IS east THEN output IS allright;
     RULE 4 : IF x IS middleLeft AND angle IS west THEN output IS allleft;
-    
-    // RULE 9  : IF x IS center AND angle IS north THEN output IS allleft;
-    // RULE 10 : IF x IS center AND angle IS north THEN output IS allright;
-    // RULE 11 : IF x IS center AND angle IS south THEN output IS keep;
-    // RULE 12 : IF x IS center AND angle IS east THEN output IS allright;
-    // RULE 13 : IF x IS center AND angle IS west THEN output IS allleft;
 
     RULE 18 : IF x IS middleRight AND angle IS north THEN output IS allleft;
     RULE 19 : IF x IS middleRight AND angle IS south THEN output IS allright;
@@ -81,17 +75,17 @@ RULEBLOCK No1
     RULE 20 : IF x IS right AND angle IS east THEN output IS allright;
     RULE 21 : IF x IS right AND angle IS west THEN output IS allleft;
 
-    RULE 22 : IF y IS far AND x IS middleLeft AND angle IS west THEN output IS allleft;
-    RULE 23 : IF y IS far AND x IS middleRight AND angle IS east THEN output IS allright;
+    // RULE 22 : IF y IS far AND x IS middleLeft AND angle IS west THEN output IS allleft;
+    // RULE 23 : IF y IS far AND x IS middleRight AND angle IS east THEN output IS allright;
 
     // RULE 24 : IF y IS middle AND x IS center AND angle IS west THEN output IS allleft;
     // RULE 25 : IF y IS middle AND x IS center AND angle IS east THEN output IS allright;
 
-    RULE 26 : IF y IS close AND x IS middleLeft AND angle IS west THEN output IS allleft;
-    RULE 27 : IF y IS close AND x IS middleRight AND angle IS east THEN output IS allright;
+    // RULE 26 : IF y IS close AND x IS middleLeft AND angle IS west THEN output IS allleft;
+    // RULE 27 : IF y IS close AND x IS middleRight AND angle IS east THEN output IS allright;
 
-    RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allleft;
-    RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allright;
+    // RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allleft;
+    // RULE 18 : IF y IS middle AND x IS center AND angle IS south THEN output IS allright;
 
 END_RULEBLOCK
 
